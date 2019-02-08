@@ -21,6 +21,10 @@ i18n
           "Welcome": {
             "To React":  "Welcome to React and react-i18next",
             "To New Universe":  "Welcome to new Universe"
+          },
+          "List": {
+            "Added Users": "Added {{count}} user",
+            "Added Users_plural": "Added {{count}} users",
           }
         }
       },
@@ -29,6 +33,10 @@ i18n
           "Welcome": {
             "To React": "Bem vindo ao React and react-i18next",
             "To New Universe":  "Bem vindo ao novo Universo"
+          },
+          "List": {
+            "Added Users": "Adicionado {{count}} usuário",
+            "Added Users_plural": "Adicionado {{count}} usuários",
           }
         }
       }

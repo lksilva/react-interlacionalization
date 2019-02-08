@@ -14,7 +14,7 @@ export const MyTransletedComponent = () => {
     </Fragment>
   )
 }
-// 
+
 class App extends Component {
   state = {
     value: 'pt-BR'
@@ -35,7 +35,8 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
 
           <MyTransletedComponent />
-
+          <p>{this.props.t('List.Added Users', { count: 1 })}</p>
+          <p>{this.props.t('List.Added Users', { count: 3 })}</p>
           <label>
             Escolha seu idioma:
             <select value={this.state.value} onChange={this.handleChange}>
