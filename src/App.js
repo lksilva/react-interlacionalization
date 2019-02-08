@@ -37,13 +37,16 @@ class App extends Component {
           <p>{this.props.t('list.added-users', { count: 1 })}</p>
           <p>{this.props.t('list.added-users', { count: 3 })}</p>
 
-          <small>{this.props.t([`error.${404}`, 'error.unspecific'])}</small>
-          <small>{this.props.t([`error.${470}`, 'error.unspecific'])}</small>
+          <p>{this.props.t([`error.${404}`, 'error.unspecific'])}</p>
+          <p>{this.props.t([`error.${470}`, 'error.unspecific'])}</p>
 
-          <strong>{this.props.t('key', { lib: 'React' })}</strong>
+          <p>{this.props.t('key', { lib: 'React' })}</p>
+
+          <p>{this.props.t('gender.friend')}</p>
+          <p>{this.props.t('gender.friend', { context: 'male' })}</p>
+          <p>{this.props.t('gender.friend', { context: 'female' })}</p>
 
           <label>
-            Escolha seu idioma:
             <select value={this.state.value} onChange={this.handleChange}>
               <option value="pt-BR">Português</option>
               <option value="en-US">English</option>

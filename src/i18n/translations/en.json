@@ -1,0 +1,22 @@
+{
+  "translation": {
+    "welcome": {
+      "react":  "Welcome to React and react-i18next",
+      "universe":  "Welcome to new Universe"
+    },
+    "list": {
+      "added-users": "Added {{count}} user",
+      "added-users_plural": "Added {{count}} users"
+    },
+    "error": {
+      "unspecific": "Something went wrong.",
+      "404": "The page was not found."
+    },
+    "key": "{{lib}} is the biggest lib of front",
+    "gender": {
+      "friend": "A friend",
+      "friend_male": "A boyfriend",
+      "friend_female": "A girlfriend"
+    }
+  }
+}
