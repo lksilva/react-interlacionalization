@@ -9,8 +9,8 @@ export const MyTransletedComponent = () => {
 
   return (
     <Fragment>
-      <p>{t('Welcome.To New Universe')}</p>
-      <p>{t('Welcome.To React')}</p>
+      <p>{t('welcome.universe')}</p>
+      <p>{t('welcome.react')}</p>
     </Fragment>
   )
 }
@@ -23,8 +23,6 @@ class App extends Component {
   handleChange = (event) => {
     this.setState({value: event.target.value}, () => {
       this.props.i18n.changeLanguage(this.state.value);
-      console.log('props ==>>', this.props.i18n);
-      console.log('vent.target.value ==>>', this.state.value);
     });
   }
 
@@ -35,8 +33,15 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
 
           <MyTransletedComponent />
-          <p>{this.props.t('List.Added Users', { count: 1 })}</p>
-          <p>{this.props.t('List.Added Users', { count: 3 })}</p>
+
+          <p>{this.props.t('list.added-users', { count: 1 })}</p>
+          <p>{this.props.t('list.added-users', { count: 3 })}</p>
+
+          <small>{this.props.t([`error.${404}`, 'error.unspecific'])}</small>
+          <small>{this.props.t([`error.${470}`, 'error.unspecific'])}</small>
+
+          <strong>{this.props.t('key', { lib: 'React' })}</strong>
+
           <label>
             Escolha seu idioma:
             <select value={this.state.value} onChange={this.handleChange}>

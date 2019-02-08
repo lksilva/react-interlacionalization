@@ -18,26 +18,36 @@ i18n
     resources: {
       en: {
         translation: {
-          "Welcome": {
-            "To React":  "Welcome to React and react-i18next",
-            "To New Universe":  "Welcome to new Universe"
+          "welcome": {
+            "react":  "Welcome to React and react-i18next",
+            "universe":  "Welcome to new Universe"
           },
-          "List": {
-            "Added Users": "Added {{count}} user",
-            "Added Users_plural": "Added {{count}} users",
-          }
+          "list": {
+            "added-users": "Added {{count}} user",
+            "added-users_plural": "Added {{count}} users",
+          },
+          "error": {
+            "unspecific": "Something went wrong.",
+            "404": "The page was not found.",
+          },
+          "key": "{{lib}} is the biggest lib of front"
         }
       },
       br: {
         translation: {
-          "Welcome": {
-            "To React": "Bem vindo ao React and react-i18next",
-            "To New Universe":  "Bem vindo ao novo Universo"
+          "welcome": {
+            "react": "Bem vindo ao React and react-i18next",
+            "universe":  "Bem vindo ao novo Universo"
           },
-          "List": {
-            "Added Users": "Adicionado {{count}} usuário",
-            "Added Users_plural": "Adicionado {{count}} usuários",
-          }
+          "list": {
+            "added-users": "Adicionado {{count}} usuário",
+            "added-users_plural": "Adicionado {{count}} usuários",
+          },
+          "error": {
+            "unspecific": "Algo inesperado aconteceu.",
+            "404": "A página não foi encontrada.",
+          },
+          "key": "{{lib}} é a melhor lib de front"
         }
       }
     },
